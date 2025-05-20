@@ -334,19 +334,65 @@
     </script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+        @font-face {
+            font-family: 'Aptos';
+            src: url('assets/fonts/Aptos.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos';
+            src: url('assets/fonts/Aptos-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos';
+            src: url('assets/fonts/Aptos-Italic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos';
+            src: url('assets/fonts/Aptos-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos Display';
+            src: url('assets/fonts/Aptos-Display.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos Display';
+            src: url('assets/fonts/Aptos-Display-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
 
         :root {
             --primary: #4B7355;
             --secondary: #333333;
         }
 
-        .font-playfair {
-            font-family: 'Playfair Display', serif;
+        .font-display {
+            font-family: 'Aptos Display', sans-serif;
         }
 
-        .font-poppins {
-            font-family: 'Poppins', sans-serif;
+        .font-body {
+            font-family: 'Aptos', sans-serif;
         }
 
         /* Language Switcher Styles */
@@ -894,7 +940,7 @@
 </head>
 
 <body
-    class="home wp-singular page-template page-template-page-landing page-template-page-landing-php page page-id-250 wp-theme-butlerpage font-poppins antialiased lang-fr butler-theme">
+    class="home wp-singular page-template page-template-page-landing page-template-page-landing-php page page-id-250 wp-theme-butlerpage font-body antialiased lang-fr butler-theme">
     <!-- Page Loader -->
     <div class="loader">
         <img src="https://butler.ma/wp-content/themes/butlerpage/assets/logo.webp" alt="Butler Logo" class="w-24">
@@ -1106,7 +1152,7 @@
             <div class="text-white space-y-8 max-w-3xl" data-aos="fade-right">
 
 
-                <h1 class="text-[2.3rem] lg:text-7xl font-playfair font-bold leading-tight">
+                <h1 class="text-[2.3rem] lg:text-7xl font-display font-bold leading-tight">
                     Connectez facilement les touristes aux <span class="text-primary"> meilleures expériences
                         culinaires</span> </h1>
 
@@ -1182,7 +1228,7 @@
                 <div class="lg:col-span-5 text-white" data-aos="fade-right">
                     <div class="pr-6 lg:pr-12">
 
-                        <h2 class="text-6xl font-playfair font-bold mb-6 text-primary">
+                        <h2 class="text-6xl font-display font-bold mb-6 text-primary">
                             Qui <span class="text-primary relative inline-block">
                                 sommes-nous
                                 <svg class="absolute -bottom-2 left-0 w-full" height="6" viewBox="0 0 200 6" fill="none"
@@ -1411,7 +1457,7 @@
         <div class="container mx-auto px-4 relative z-10">
             <!-- Section Header -->
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-playfair font-bold text-secondary mb-2">Comment ça fonctionne</h2>
+                <h2 class="text-4xl font-display font-bold text-secondary mb-2">Comment ça fonctionne</h2>
                 <div class="w-24 h-1 bg-primary rounded-full mx-auto mb-6"></div>
                 <p class="text-gray-600 max-w-2xl mx-auto">Découvrez comment Butler transforme l'expérience de
                     réservation pour les réceptionnistes d'hôtels et les clients.</p>

@@ -330,19 +330,65 @@
     </script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+        @font-face {
+            font-family: 'Aptos';
+            src: url('assets/fonts/Aptos.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos';
+            src: url('assets/fonts/Aptos-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos';
+            src: url('assets/fonts/Aptos-Italic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos';
+            src: url('assets/fonts/Aptos-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos Display';
+            src: url('assets/fonts/Aptos-Display.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aptos Display';
+            src: url('assets/fonts/Aptos-Display-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
 
         :root {
             --primary: #4B7355;
             --secondary: #333333;
         }
 
-        .font-playfair {
-            font-family: 'Playfair Display', serif;
+        .font-display {
+            font-family: 'Aptos Display', sans-serif;
         }
 
-        .font-poppins {
-            font-family: 'Poppins', sans-serif;
+        .font-body {
+            font-family: 'Aptos', sans-serif;
         }
 
         /* Language Switcher Styles */
@@ -890,7 +936,7 @@
 </head>
 
 <body
-    class="wp-singular page-template page-template-get-started page-template-get-started-php page page-id-299 wp-theme-butlerpage font-poppins antialiased lang-en butler-theme">
+    class="wp-singular page-template page-template-get-started page-template-get-started-php page page-id-299 wp-theme-butlerpage font-body antialiased lang-en butler-theme">
     <!-- Page Loader -->
     <div class="loader">
         <img src="https://butler.ma/wp-content/themes/butlerpage/assets/logo.webp" alt="Butler Logo" class="w-24">
@@ -914,21 +960,7 @@
                     </div>
                 </a>
 
-                <!-- Mobile Language Selector -->
-                <div class="lg:hidden flex items-center mr-4">
-                    <div class="language-selector">
-                        <div class="flex space-x-2">
-                            <a href="get-started.html" onclick="switchLanguage('en')" class="language-flag-link active">
-                                <img src="https://butler.ma/wp-content/themes/butlerpage/assets/flags/us.png"
-                                    alt="English" class="border-primary" style="width: 24px; height: 24px;">
-                            </a>
-                            <a href="get-started-fr.html" onclick="switchLanguage('fr')" class="language-flag-link ">
-                                <img src="https://butler.ma/wp-content/themes/butlerpage/assets/flags/fr.png"
-                                    alt="Français" class="" style="width: 24px; height: 24px;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
 
                 <!-- Mobile Menu Button -->
                 <button class="mobile-menu-button lg:hidden flex flex-col justify-center items-center" id="menuToggle">
@@ -958,19 +990,7 @@
                         </a>
                     </div>
 
-                    <!-- Language Selector -->
-                    <div class="language-selector mx-4">
-                        <div class="flex space-x-3">
-                            <a href="get-started.html" onclick="switchLanguage('en')" class="language-flag-link active">
-                                <img src="https://butler.ma/wp-content/themes/butlerpage/assets/flags/us.png"
-                                    alt="English" class="border-primary">
-                            </a>
-                            <a href="get-started-fr.html" onclick="switchLanguage('fr')" class="language-flag-link ">
-                                <img src="https://butler.ma/wp-content/themes/butlerpage/assets/flags/fr.png"
-                                    alt="Français" class="">
-                            </a>
-                        </div>
-                    </div>
+
 
 
                 </nav>
@@ -1121,7 +1141,7 @@
         <!-- Content -->
         <div class="container mx-auto px-4 py-20 relative z-10">
             <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-12 text-white">
-                <h1 class="text-4xl md:text-5xl font-playfair font-bold text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-display font-bold text-center mb-8">
                     Get Started with Butler </h1>
 
                 <p class="text-xl text-gray-200 text-center mb-12">
@@ -1225,7 +1245,7 @@
                     <h2 class="text-3xl font-bold mb-6">
                         Join Butler Today! </h2>
                     <p class="text-xl text-gray-200 mb-8">
-                        Take the first step towards simplifying your reservation process and boosting your earnings.
+                        Take the first step towards simplifying your clients' reservations and maximizing your earnings.
                         Download the app now! </p>
 
                     <!-- App Store Buttons -->
